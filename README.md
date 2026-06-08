@@ -31,11 +31,27 @@ The model's performance is strictly evaluated using the **Character Error Rate (
 
 ## Getting Started
 
+### 1. Clone the Repository
+First, clone the code to your local machine:
+```bash
+git clone https://github.com/arpitsingh2492/distorted-sequence-ocr.git
+cd distorted-sequence-ocr
+```
+
+### 2. Install Dependencies
 Ensure you have the required ML dependencies installed:
 ```bash
 pip install torch torchvision numpy pandas pillow jupyter
 ```
 
-1. Place the `train_images/` and `test_images/` directories into the `datasets/` folder (these are ignored by git due to size).
-2. Open the `codebase/` folder and run `main_notebook.ipynb`. 
-3. The notebook will automatically load the pre-trained `best_model.pth` weights to perform rapid inference and generate new predictions inside the `output/` folder!
+### 3. Setup the Dataset
+Because the image datasets are extremely large, they are not hosted directly on GitHub. 
+* Place your unzipped `train_images/` and `test_images/` directories directly into the `datasets/` folder.
+
+### 4. Run the AI Model
+1. Navigate into the codebase directory:
+```bash
+cd codebase
+```
+2. Open `main_notebook.ipynb` in Jupyter Notebook or VSCode.
+3. Run all cells. The notebook will automatically load the pre-trained `best_model.pth` weights to perform rapid inference and instantly generate new predictions inside the `output/` folder!
