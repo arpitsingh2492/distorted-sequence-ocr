@@ -19,12 +19,15 @@ Traditional ML OCR requires strict "bounding boxes" around every single characte
 
 The model's performance is strictly evaluated using the **Character Error Rate (CER)**. This is calculated using the Levenshtein Distance algorithm, which measures the minimum number of single-character edits (insertions, deletions, substitutions) required to fix the AI's prediction.
 
-## Repository Contents
+## Repository Layout
 
-- `submission_notebook.ipynb`: The fully documented Jupyter Notebook containing Exploratory Data Analysis, preprocessing, the CRNN Neural Network definition, training loop, evaluation, and inference.
-- `best_model.pth`: The saved PyTorch weights of the fully-trained AI model.
-- `submission.csv`: The finalized model predictions generated on the test dataset.
-- `train-labels.csv`: The true labels for the training sequences.
+- 📁 **`codebase/`**
+  - `main_notebook.ipynb`: The fully documented Jupyter Notebook containing Exploratory Data Analysis, preprocessing, the CRNN Neural Network definition, training loop, evaluation, and inference.
+  - `best_model.pth`: The saved PyTorch weights of the fully-trained AI model.
+- 📁 **`datasets/`**
+  - `train-labels.csv`: The true labels for the training sequences (place `train_images/` and `test_images/` directories here).
+- 📁 **`output/`**
+  - `output.csv`: The finalized model predictions generated on the test dataset.
 
 ## Getting Started
 
@@ -33,5 +36,6 @@ Ensure you have the required ML dependencies installed:
 pip install torch torchvision numpy pandas pillow jupyter
 ```
 
-1. Place the `train_images/` and `test_images/` directories in the root folder (ignored by git due to size).
-2. Run the `submission_notebook.ipynb` to reproduce the AI training pipeline, or load `best_model.pth` directly for rapid inference.
+1. Place the `train_images/` and `test_images/` directories into the `datasets/` folder (these are ignored by git due to size).
+2. Open the `codebase/` folder and run `main_notebook.ipynb`. 
+3. The notebook will automatically load the pre-trained `best_model.pth` weights to perform rapid inference and generate new predictions inside the `output/` folder!
