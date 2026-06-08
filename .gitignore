@@ -1,5 +1,0 @@
-train_images/
-test_images/
-.ipynb_checkpoints/
-__pycache__/
-*.pyc
