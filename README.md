@@ -22,8 +22,7 @@ The model's performance is strictly evaluated using the **Character Error Rate (
 ## Repository Layout
 
 - 📁 **`codebase/`**
-  - `main_notebook.ipynb`: The fully documented Jupyter Notebook containing Exploratory Data Analysis, preprocessing, the CRNN Neural Network definition, training loop, evaluation, and inference.
-  - `best_model.pth`: The saved PyTorch weights of the fully-trained AI model.
+  - `main_notebook.ipynb`: The fully documented Jupyter Notebook containing Exploratory Data Analysis, preprocessing, the CRNN Neural Network definition, training loop, evaluation, and inference. The pre-trained AI weights are natively embedded directly inside this notebook for instant standalone execution.
 - 📁 **`datasets/`**
   - `train-labels.csv`: The true labels for the training sequences (place `train_images/` and `test_images/` directories here).
 - 📁 **`output/`**
