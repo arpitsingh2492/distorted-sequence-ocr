@@ -1,0 +1,19 @@
+# Dataset images (very large, should not be committed to GitHub)
+datasets/train_images/
+datasets/test_images/
+
+# Python caching & environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS/System files
+.DS_Store
+Thumbs.db
